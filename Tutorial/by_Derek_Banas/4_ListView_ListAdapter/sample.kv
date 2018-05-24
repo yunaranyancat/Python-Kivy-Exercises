@@ -1,0 +1,32 @@
+<SampGridLayout>:
+    rows: 2
+
+    BoxLayout:
+        size_hint_y: None
+        height: 30
+        spacing: 10
+
+        canvas:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Button:
+            background_normal: 'exit.png'
+            background_down: 'exit.png'
+            size_hint_x: None
+            width: 30
+
+        Button:
+            background_normal: 'exblue.jpg'
+            background_down: 'exgreen.jpg'
+            size_hint_x: None
+            width: 30
+
+        Button:
+            background_normal: 'red.png'
+            background_down: 'green.jpeg'
+            size_hint_x: None
+            width: 30
