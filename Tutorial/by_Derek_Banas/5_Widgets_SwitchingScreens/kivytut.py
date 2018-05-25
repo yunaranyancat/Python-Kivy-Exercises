@@ -29,6 +29,13 @@ class SampBoxLayout(BoxLayout):
         else:
             print("Switched Off")
 
+    def open_popup(self):
+        the_popup = CustomPopup()
+        the_popup.open()
+
+    def spinner_clicked(self, value):
+        print("Spinner Value "+value)
+
 class SampleApp(App):
     def build(self):
         Window.clearcolor = (1, 1, 1, 1)
