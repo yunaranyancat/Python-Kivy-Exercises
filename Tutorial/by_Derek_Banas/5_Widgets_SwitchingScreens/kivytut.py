@@ -23,6 +23,12 @@ class SampBoxLayout(BoxLayout):
     red = ObjectProperty(False)
     green = ObjectProperty(False)
 
+    def switch_on(self, instance, value):
+        if value is True:
+            print("Switched On")
+        else:
+            print("Switched Off")
+
 class SampleApp(App):
     def build(self):
         Window.clearcolor = (1, 1, 1, 1)
