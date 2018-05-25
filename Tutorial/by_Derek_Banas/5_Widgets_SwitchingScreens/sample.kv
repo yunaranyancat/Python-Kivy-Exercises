@@ -21,3 +21,32 @@ SampBoxLayout: #root
         CheckBox:
             on_active: root.checkbox_18_clicked(self, self.active)
             size_hint_x: .55
+
+BoxLayout:
+    orientation: "horizontal"
+    size_hint_x: .55
+
+    CustLabel:
+        text: "Favorite Color"
+        size_hint_x: .265
+    CheckBox:
+        group: "fav_color"
+        value: root.blue
+        size_hint_x: .05
+    CustLabel:
+        text: "Blue"
+        size_hint_x: .15
+    CheckBox:
+        group: "fav_color"
+        value: root.red
+        size_hint_x: .05
+    CustLabel:
+        text: "Red"
+        size_hint_x: .15
+    CheckBox:
+        group: "fav_color"
+        value: root.green
+        size_hint_x: .05
+    CustLabel:
+        text: "Green"
+        size_hint_x: .15

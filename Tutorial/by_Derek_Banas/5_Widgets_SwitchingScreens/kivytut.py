@@ -19,6 +19,9 @@ class SampBoxLayout(BoxLayout):
         else:
             print("Checkbox is Unchecked")
 
+    blue = ObjectProperty(True)
+    red = ObjectProperty(False)
+    green = ObjectProperty(False)
 
 class SampleApp(App):
     def build(self):
