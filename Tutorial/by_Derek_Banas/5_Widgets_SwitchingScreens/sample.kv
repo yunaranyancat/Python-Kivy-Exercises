@@ -1,0 +1,23 @@
+#: import Checkbox kivy.uix.checkbox
+
+<CustLabel@Label>
+    color: 0, 0, 0, 1
+
+SampBoxLayout: #root
+
+<SampBoxLayout>:
+    orientation: "vertical"
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_x: .22
+
+        CustLabel:
+            text: "Are you over 18?"
+            size_hint_x: .80
+
+        CheckBox:
+            on_active: root.checkbox_18_clicked(self, self.active)
+            size_hint_x: .55
